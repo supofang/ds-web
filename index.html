@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
+  <title>彈幕與射手-官方網站</title>
+  <link href='stylesheets/all.css' media='screen' rel='stylesheet' type='text/css'>
+  <link href="images/css/sprite.css" rel="stylesheet">
+  <style>
+    .loading {
+      position: fixed;
+	    left: 0px;
+	    top: 0px;
+    	width: 100%;
+    	height: 100%;
+	    z-index: 9999;
+      background: url(images/svg/Rolling-1s-100px.svg) center no-repeat #fff;
+      background-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loading"></div>
+  <header class="header">
+    <div class="logo text-hide bounceInUp">回官網</div>
+    <a href="https://www.youtube.com/embed/2F1TcVY0Lts?autoplay=1" class="video js-fancybox fancybox.iframe"></a>
+    <ul class="sound">
+      <li class="sound--icon svg-sound svg-sound-dims"></li>
+      <li class="sound--wave sound--wave_one"></li>
+      <li class="sound--wave sound--wave_two"></li>
+    </ul>
+    <audio id="audio" loop>
+      <source src="audio/BGM_main.mp3" type="audio/mpeg" />
+    </audio>
+    <div id="scene" data-relative-input="true">
+      <div class="layer" data-depth="0.1">
+        <div class="header03"></div>
+      </div>
+      <div class="layer" data-depth="0.2">
+        <div class="header02"></div>
+      </div>
+      <div class="layer" data-depth="0.15">
+        <div class="header01"></div>
+      </div>
+      <div class="layer" data-depth="0.5">
+        <div class="feather"></div>
+      </div>
+    </div>
+  </header>
+  <div class="news">
+    <section class="container">
+      <div class="row pb-5">
+        <div class="col-lg-3">
+          <nav class="d-flex flex-lg-column text-center download">
+            <a href="" class="apk py-3 py-md-5 px-3 w-100"><img class="img-fluid" src="images/apk.png" alt=""></a>
+            <a href="" class="google py-3 py-md-5 px-3 w-100"><img class="img-fluid" src="images/googleplay.png" alt=""></a>
+            <a href="" class="appstore py-3 py-md-5 px-3 w-100"><img class="img-fluid" src="images/appstore.png" alt=""></a>
+          </nav>
+        </div>
+        <div class="col-lg-9 pt-3 text-light">
+          <div class="tit mt-4 mt-md-5">
+            <h3>最新公告</h3>
+            <p>News Post</p>
+          </div>
+
+          <nav class="nav nav-tabs mt-5">
+            <a class="nav-link active px-md-4 px-3" data-toggle="tab" href="#news-new" role="tab">最新</a>
+            <a class="nav-link px-md-4 px-3" data-toggle="tab" href="#news-activity" role="tab">活動</a>
+            <a class="nav-link px-md-4 px-3" data-toggle="tab" href="#news-news" role="tab">新聞</a>
+            <a class="nav-link px-md-4 px-3" data-toggle="tab" href="#news-system" role="tab">系統</a>
+          </nav>
+
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="news-new" role="tabpanel">
+              <ul class="list-news">
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-act radius-big px-3 py-1 mr-2">活動</span>
+                  <a href="#">字字字字字字Update你好你好 delay</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-news radius-big px-3 py-1 mr-2">新聞</span>
+                  <a href="#">【彈幕與射手】精彩開服活動，好康大放送</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-system radius-big px-3 py-1 mr-2">系統</span>
+                  <a href="#">字字字字字字Update delay</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-act radius-big px-3 py-1 mr-2">活動</span>
+                  <a href="#">字字字字字字Update delay</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-act radius-big px-3 py-1 mr-2">活動</span>
+                  <a href="#">字字字字字字Update delay</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="news-activity" role="tabpanel">
+              <ul class="list-news">
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-act radius-big px-3 py-1 mr-2">活動</span>
+                  <a href="#">字字字字字字Update delay</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-act radius-big px-3 py-1 mr-2">活動</span>
+                  <a href="#">字字字字字字Update delay</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="news-news" role="tabpanel">
+              <ul class="list-news">
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-news radius-big px-3 py-1 mr-2">新聞</span>
+                  <a href="#">字字字字字字Update delay</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-news radius-big px-3 py-1 mr-2">新聞</span>
+                  <a href="#">字字字字字字Update delay</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-news radius-big px-3 py-1 mr-2">新聞</span>
+                  <a href="#">字字字字字字Update delay</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="news-system" role="tabpanel">
+              <ul class="list-news">
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-system radius-big px-3 py-1 mr-2">系統</span>
+                  <a href="#">字字字字字字Update delay</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+                <li class="pt-4 pb-2 d-flex border-bottom">
+                  <span class="badge badge-system radius-big px-3 py-1 mr-2">系統</span>
+                  <a href="#">字字字字字字Update delay</a>
+                  <span class="ml-auto">2018/01/01</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="pagination mt-5 justify-content-center justify-content-md-start">
+            <li class="page-item mr-2 disabled">
+              <a class="page-link radius-big" href="#">
+                <span aria-hidden="true">
+                  < </span> </a> </li> <li class="page-item mr-2 active">
+                    <a class="page-link radius-big" href="#">1</a>
+            </li>
+            <li class="page-item mr-2">
+              <a class="page-link radius-big" href="#">2</a>
+            </li>
+            <li class="page-item mr-2">
+              <a class="page-link radius-big" href="#">3</a>
+            </li>
+            <li class="page-item mr-2">
+              <a class="page-link radius-big" href="#">
+                <span aria-hidden="true">></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="container-fluid">
+    <div class="row service">
+      <div class="col-md-6">
+        <a href="#" class="py-5 my-3 btn btn-block">
+          <span class="icon-fb mb-2"></span>
+          <h3>官方粉絲團</h3>
+          <p>Find Us On Facebook</p>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="#" class="py-5 my-3 btn btn-block">
+          <span class="icon-ser mb-2"></span>
+          <h3>客服中心</h3>
+          <p>Service Center</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="bg bg-3 p-5">
+    <section class="container-fluid">
+      <div class="row justify-content-end align-items-center js-tab">
+        <div class="col-xl-4 col-lg-6">
+          <div class="tit mb-5 border-primary">
+            <h3>人物介紹</h3>
+            <p>Character</p>
+          </div>
+          <ul class="character__head list-unstyled  js-tabs">
+            <li><img src="images/h-1.png"></li>
+            <li><img src="images/h-2.png"></li>
+            <li><img src="images/h-3.png"></li>
+            <li><img src="images/h-4.png"></li>
+            <li><img src="images/h-5.png"></li>
+            <li><img src="images/h-6.png"></li>
+            <li><img src="images/h-7.png"></li>
+            <li><img src="images/h-8.png"></li>
+            <li><img src="images/h-9.png"></li>
+            <li><img src="images/h-10.png"></li>
+            <li><img src="images/h-11.png"></li>
+            <li><img src="images/h-12.png"></li>
+          </ul>
+          <div class="character__text  js-tab-content p-3 border border-primary bg-white-5">
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>男主角</h3>
+                <p class="mb-2">職業：射手</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Pony1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Pony2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Pony3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Pony4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：異世界
+                <br>屬性：無
+              </p>
+              <p><b>沒有我射不中的東西</b></p>
+            </div>
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>女主角</h3>
+                <p class="mb-2">職業：射手</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Amanda1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Amanda2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Amanda3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Amanda4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：異世界
+                <br>屬性：無
+              </p>
+              <p><b>讓我在背後守護你</b></p>
+            </div>
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>天照</h3>
+                <p class="mb-2">職業：射手</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Amaterasu1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Amaterasu2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Amaterasu3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Amaterasu4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：扶桑
+                <br>屬性：光
+                <br>資質44 力量EX 智力SS 體質C 敏捷EX
+                <br>專屬裝備：八咫鏡、八尺瓊勾玉
+              </p>
+              <p><b>統治中高天原的太陽神</b></p>
+            </div>
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>須佐之男</h3>
+                <p class="mb-2">職業：刺客</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/VegetarianCalyx1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/VegetarianCalyx2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/VegetarianCalyx3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/VegetarianCalyx4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：扶桑
+                <br>屬性：風
+                <br>資質40 力量SS 智力B 體質A 敏捷SS
+                <br>專屬裝備：十拳劍、八鹽折之酒
+              </p>
+              <p><b>斬殺八歧大蛇的三貴么子</b></p>
+            </div>
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>孫悟空</h3>
+                <p class="mb-2">職業：戰士\刺客</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/SunWuKong1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/SunWuKong2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/SunWuKong3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/SunWuKong4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：華夏
+                <br>屬性：火
+                <br>資質44 力量EX 智力C 體質SS 敏捷SS
+                <br>專屬裝備：如意金箍棒、筋斗雲
+              </p>
+              <p><b>來自花果山的齊天大聖</b></p>
+            </div>
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>孟婆</h3>
+                <p class="mb-2">職業：輔助</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/MengPo1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/MengPo2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/MengPo3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/MengPo4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：華夏
+                <br>屬性：暗
+                <br>資質40 力量B 智力EX 體質A 敏捷A
+                <br>專屬裝備：孟婆湯、紫霧面紗
+              </p>
+              <p><b>管理遺忘的年長女神</b></p>
+            </div>
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>奧丁</h3>
+                <p class="mb-2">職業：戰士\射手</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Odin1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Odin2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Odin3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Odin4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：北歐
+                <br>屬性：地
+                <br>資質44 力量S 智力SS 體質A 敏捷EX
+                <br>專屬裝備：永恆之槍、智慧泉水
+              </p>
+              <p><b>獨眼的勝利之神</b></p>
+            </div>
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>芙蕾雅</h3>
+                <p class="mb-2">職業：戰士</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Freya1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Freya2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Freya3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Freya4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：北歐
+                <br>屬性：火
+                <br>資質40 力量SS 智力B 體質A 敏捷SS
+                <br>專屬裝備：鷹之羽衣、布里希嘉曼
+              </p>
+              <p><b>美麗炙熱的戰場女武神</b></p>
+            </div>
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>阿芙洛狄忒</h3>
+                <p class="mb-2">職業:輔助</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Aphrodite1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Aphrodite2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Aphrodite3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Aphrodite4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：希臘
+                <br>屬性：水
+                <br>資質40 力量B 智力EX 體質A 敏捷S
+                <br>專屬裝備：完美貝殼、閃光珍珠
+              </p>
+              <p><b>掌管情誼的女神</b></p>
+            </div>
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>宙斯</h3>
+                <p class="mb-2">職業：射手\法師</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Zeus1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Zeus2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Zeus3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Zeus4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：希臘
+                <br>屬性：風
+                <br>資質44 力量SS 智力EX 體質A 敏捷S
+                <br>專屬裝備：雷霆、奧林匹斯之座
+              </p>
+              <p><b>統領宇宙的天神</b></p>
+            </div>
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>奧西里斯</h3>
+                <p class="mb-2">職業:衛士\輔助</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Osiris1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Osiris2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Osiris3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Osiris4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：埃及
+                <br>屬性：暗
+                <br>資質44 力量S 智力EX 體質EX 敏捷B
+                <br>專屬裝備：永生權杖、復活之棺
+              </p>
+              <p><b>掌控陰間的冥王</b></p>
+            </div>
+            <div class="js-tabs-item">
+              <div class="d-flex align-items-end flex-wrap justify-content-center border-bottom border-primary mb-3">
+                <h3>貝斯特</h3>
+                <p class="mb-2">職業:輔助</p>
+                <div class="audios mb-2 ml-auto col-sm-auto col-12 text-center">
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Best1.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Best2.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Best3.wav" type="audio/wav"></audio>
+                  <a href="" class="btn btn-primary btn-audio"><span class="svg-speaker svg-speaker-dims"></span></a>
+                  <audio>
+                    <source src="audio/Best4.wav" type="audio/wav"></audio>
+                </div>
+              </div>
+              <p>國家：埃及
+                <br>屬性：水
+                <br>資質40 力量S 智力A 體質B 敏捷SS
+                <br>專屬裝備：九命吊墜、貓耳頭飾
+              </p>
+              <p><b>守護家庭的女戰神</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 my-4">
+          <div class="character__pic  js-tab-content2">
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-1.png"></div>
+
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-2.png"></div>
+
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-3.png"></div>
+
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-4.png"></div>
+
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-5.png"></div>
+
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-6.png"></div>
+
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-7.png"></div>
+
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-8.png"></div>
+
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-9.png"></div>
+
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-10.png"></div>
+
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-11.png"></div>
+
+            <div class="js-tabs-item"><img class="img-fluid" src="images/p-12.png"></div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="bg bg-2 p-5">
+    <div class="container py-5 text-light">
+      <div class="tit mb-5">
+        <h3>遊戲介紹</h3>
+        <p>Game Introduction</p>
+      </div>
+      <div class="carousel">
+        <div class="carousel-cell">
+          <img src="images/750x1334_1.jpg" />
+        </div>
+        <div class="carousel-cell">
+          <img src="images/750x1334_2.jpg" />
+        </div>
+        <div class="carousel-cell">
+          <img src="images/750x1334_3.jpg" />
+        </div>
+        <div class="carousel-cell">
+          <img src="images/750x1334_4.jpg" />
+        </div>
+        <div class="carousel-cell">
+          <img src="images/750x1334_5.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <section class="container notice">
+      <div class="row pt-3 justify-content-center justify-content-lg-between">
+        <div class="col-auto">
+          <ul class="list-unstyled d-flex align-items-center company">
+            <li class="icon-gameboss col-auto"></li>
+            <li class="text-c">©2018 GameBoss Digital Entertainment Co., Ltd.</li>
+          </ul>
+        </div>
+        <div class="col-auto d-flex">
+          <ul class="grade text-right mb-0">
+            <li>本軟體依中華民國遊戲軟體分級管理辦法分類為：輔12+級</li>
+            <li>本遊戲部份內容涉及：暴力、恐怖、不當言語、性..等內容</li>
+            <li>本遊戲為免費使用，遊戲內另提供購買虛擬遊戲幣、物品購買等付費服務</li>
+            <li>請注意遊戲時間，避免沉迷於遊戲</li>
+          </ul>
+          <div class="icon"><span class="icon-12"></span></div>
+        </div>
+      </div>
+    </section>
+
+  </footer>
+  <script src="javascripts/vendor.js"></script>
+  <script src="javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="javascripts/script.js"></script>
+  <script>
+    window.onload = function () {
+      $(".loading").fadeOut(1500);
+      $('#audio')[0].play();
+      add();
+    }
+    function add() {
+      var a1 = $(".header03");
+      var a2 = $(".header02");
+      var a3 = $(".header01");
+      var a4 = $(".feather");
+      setTimeout(function () { a1.addClass('fadeInLeft') }, 500);
+      setTimeout(function () { a2.addClass('fadeInRight') }, 1500);
+      setTimeout(function () { a3.addClass('fadeInUp') }, 2000);
+      setTimeout(function () { a4.addClass('fadeIn') }, 2500);
+    }
+  </script>
+</body>
+
+</html>
